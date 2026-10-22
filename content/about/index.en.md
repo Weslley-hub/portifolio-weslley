@@ -13,13 +13,10 @@ I'm **Weslley Teixeira**, a full stack software engineer based in Fortaleza, Cea
 **Quick facts**
 
 - **Role:** Software Engineer
-- **Work model:** remote (FitBank was on-site)
-- **Availability:** open to remote opportunities, including international teams
+- **Work model:** remote
 - **Focus:** fintech, payments (Pix, boleto, TED, BaaS) and SVAs
 
-For the past few years I have worked mainly on Internet Banking, Pix, boletos, cash-in/cash-out, core banking and BaaS platforms, across Brazil and Latin America — including teams in Mexico, Peru, Argentina and Colombia.
-
-I currently work at **PlayHub** on SVAs (Value-Added Services). Before that, I helped take **Wiiascend Internet Banking** from zero to production (web and iOS), including as Tech Lead, and worked on **FitBank**'s Internet Banking payment flows (Pix, boleto and TED). In parallel, I did freelance projects at **Lanlink** (LLM management) and **Bio Registro** (contests and applicants).
+For the past few years I have worked mainly on Internet Banking, Pix, boletos, cash-in/cash-out, core banking and BaaS platforms, across Brazil and Latin America - including teams in Mexico, Peru, Argentina and Colombia.
 
 I hold a B.Sc. in Computer Science from the **Federal University of Ceará (UFC)** — completed in 2025 — with a CNPq undergraduate research scholarship.
 
