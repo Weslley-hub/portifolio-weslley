@@ -6,7 +6,7 @@ slug: contact
 
 ## Fale comigo
 
-Aberto a conversas sobre engenharia em bancos, fintechs e empresas de pagamento.
+Aberto a oportunidades **remotas** (inclusive times internacionais) e a conversas sobre engenharia em bancos, fintechs, pagamentos e SVAs.
 
 - **E-mail:** [weslleyfernando71609@gmail.com](mailto:weslleyfernando71609@gmail.com)
 - **LinkedIn:** [linkedin.com/in/weslley-fernando](https://www.linkedin.com/in/weslley-fernando)

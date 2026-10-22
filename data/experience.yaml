@@ -5,6 +5,8 @@
     name:
       pt: PlayHub
       en: PlayHub
+    engagement: full-time
+    work_mode: remote
     roles:
       - title:
           pt: Software Engineer
@@ -13,8 +15,8 @@
         end: ""
         current: true
         summary:
-          pt: "Engenharia full stack em produtos de streaming e entretenimento, integrando catálogos e serviços de Globoplay, Apple TV+, Deezer, Disney+ e Universal+."
-          en: "Full stack engineering on streaming and entertainment products, integrating catalogs and services from Globoplay, Apple TV+, Deezer, Disney+ and Universal+."
+          pt: "Engenharia full stack em SVAs (Serviços de Valor Agregado), integrando catálogos e serviços de Globoplay, Apple TV+, Deezer, Disney+ e Universal+."
+          en: "Full stack engineering on SVAs (Value-Added Services), integrating catalogs and services from Globoplay, Apple TV+, Deezer, Disney+ and Universal+."
         responsibilities:
           pt:
             - "Desenvolver e manter APIs e serviços em C#, .NET e ASP.NET, cobrindo regras de negócio, integrações e evolução de sistemas em produção."
@@ -28,41 +30,14 @@
             - "Investigate and resolve production incidents, from root cause to fix."
         stack: [C#, .NET, ASP.NET, React, TypeScript, REST APIs, SQL]
 
-  - id: lanlink
-    logo: ""
-    url: ""
-    name:
-      pt: Lanlink
-      en: Lanlink
-    roles:
-      - title:
-          pt: "Desenvolvedor Full Stack — Lead de Projeto"
-          en: "Full Stack Developer — Project Lead"
-        start: "2025-08-01"
-        end: "2025-12-31"
-        current: false
-        summary:
-          pt: "Planejei, arquitetei e executei um sistema de gestão e controle de LLMs em empresas — uso, custos, limites e governança de modelos."
-          en: "Planned, architected and delivered a system for managing and controlling LLMs in companies — usage, spend, limits and model governance."
-        responsibilities:
-          pt:
-            - "Liderar o projeto de ponta a ponta: planejamento, arquitetura, implementação e entrega."
-            - "Desenhar a solução de gestão de LLMs (consumo, gastos, políticas e monitoramento)."
-            - "Construir o frontend em Next.js e o backend em Node.js."
-            - "Definir integrações com provedores de modelos e regras de controle de custo."
-          en:
-            - "Led the project end to end: planning, architecture, implementation and delivery."
-            - "Designed the LLM management solution (usage, spend, policies and monitoring)."
-            - "Built the frontend in Next.js and the backend in Node.js."
-            - "Defined integrations with model providers and cost-control rules."
-        stack: [Next.js, Node.js, TypeScript, REST APIs]
-
   - id: wii-ascend
     logo: ""
     url: ""
     name:
       pt: Wii Ascend Technologies
       en: Wii Ascend Technologies
+    engagement: full-time
+    work_mode: remote
     roles:
       - title:
           pt: "Software Engineer | Tech Lead"
@@ -70,6 +45,7 @@
         start: "2025-08-01"
         end: "2025-11-30"
         current: false
+        engagement: part-time
         summary:
           pt: "Tech Lead do Wiiascend Internet Banking — conta digital com Pix, boletos, pagamentos e gestão de conta, integrada a core bancário e plataformas BaaS. Papel part-time, em paralelo à PlayHub."
           en: "Tech Lead of Wiiascend Internet Banking — a digital account with Pix, boletos, payments and account management, integrated with a banking core and BaaS platforms. Part-time role, held in parallel with PlayHub."
@@ -78,14 +54,14 @@
             - "Liderar tecnicamente o time: desenho de solução, code review, padrões e suporte hands-on."
             - "Definir e evoluir a arquitetura da aplicação."
             - "Construir o frontend do Internet Banking em React, TypeScript, Redux, Tailwind CSS e React Hook Form."
-            - "Integrar o produto ao core bancário para Pix, boletos, pagamentos e gestão de conta, com idempotência, reprocessamento e reconciliação."
+            - "Integrar o produto ao core bancário para Pix, boletos, pagamentos e gestão de conta."
             - "Desenvolver serviços backend em Node.js e TypeScript no domínio financeiro, incluindo webhooks e processamento assíncrono."
             - "Operar na AWS com infraestrutura como código em Terraform."
           en:
             - "Lead the development team technically: solution design, code review, standards and hands-on support."
             - "Define and evolve the application architecture."
             - "Build the Internet Banking frontend in React, TypeScript, Redux, Tailwind CSS and React Hook Form."
-            - "Integrate with the banking core for Pix, boletos, payments and account management, handling idempotency, reprocessing and reconciliation."
+            - "Integrate with the banking core for Pix, boletos, payments and account management."
             - "Develop backend services in Node.js and TypeScript for the financial domain, including webhooks and async processing."
             - "Operate on AWS with infrastructure as code in Terraform."
         stack: [React, TypeScript, Redux, Tailwind CSS, Node.js, Flutter, Dart, AWS, Terraform, Stripe, Fitbank, BaaS, Pix, REST APIs]
@@ -119,45 +95,18 @@
             - "Provisioned infrastructure on AWS with Terraform."
         stack: [React, TypeScript, Redux, Tailwind CSS, React Hook Form, Node.js, Flutter, Dart, iOS, AWS, Terraform, Stripe, Fitbank, BaaS, Pix, REST APIs]
 
-  - id: bio-registro
-    logo: ""
-    url: ""
-    name:
-      pt: Bio Registro
-      en: Bio Registro
-    roles:
-      - title:
-          pt: Desenvolvedor Java e Next.js
-          en: Java and Next.js Developer
-        start: "2025-02-01"
-        end: "2025-08-31"
-        current: false
-        summary:
-          pt: "Ajudei no desenvolvimento de um sistema para gestão de concursos, vagas e inscritos para provas — editais, candidaturas e acompanhamento operacional."
-          en: "Contributed to a system for managing contests, openings and exam applicants — notices, registrations and operational follow-up."
-        responsibilities:
-          pt:
-            - "Contribuir no backend em Java com Spring Boot, APIs REST e regras de negócio de concursos e inscrições."
-            - "Apoiar a modelagem de persistência com JPA/Hibernate e banco relacional."
-            - "Participar da construção de interfaces em Next.js e TypeScript para operadores e candidatos."
-            - "Ajudar na implementação de fluxos de inscrição, validação de dados e acompanhamento de status."
-          en:
-            - "Contributed to the Java backend with Spring Boot, REST APIs and business rules for contests and registrations."
-            - "Helped model persistence with JPA/Hibernate and a relational database."
-            - "Took part in building Next.js and TypeScript interfaces for operators and applicants."
-            - "Helped implement registration flows, data validation and status tracking."
-        stack: [Java, Spring Boot, Spring, Hibernate, JPA, Next.js, TypeScript, REST APIs, PostgreSQL]
-
   - id: fitbank
     logo: ""
     url: ""
     name:
       pt: FitBank
       en: FitBank
+    engagement: full-time
+    work_mode: onsite
     roles:
       - title:
-          pt: Software Developer
-          en: Software Developer
+          pt: Software Engineer
+          en: Software Engineer
         start: "2024-08-01"
         end: "2025-02-28"
         current: false
@@ -187,10 +136,12 @@
     name:
       pt: NewM
       en: NewM
+    engagement: full-time
+    work_mode: remote
     roles:
       - title:
-          pt: Software Developer
-          en: Software Developer
+          pt: Software Engineer
+          en: Software Engineer
         start: "2023-04-01"
         end: "2024-08-31"
         current: false
@@ -214,12 +165,78 @@
             - "Maintained and evolved legacy systems in PHP and Laravel."
         stack: [C#, .NET, Node.js, React, PHP, Laravel, SQL Server, Docker]
 
+freelance:
+  - id: lanlink
+    logo: ""
+    url: ""
+    name:
+      pt: Lanlink
+      en: Lanlink
+    engagement: freelance
+    work_mode: remote
+    roles:
+      - title:
+          pt: "Desenvolvedor Full Stack — Lead de Projeto"
+          en: "Full Stack Developer — Project Lead"
+        start: "2025-08-01"
+        end: "2025-12-31"
+        current: false
+        summary:
+          pt: "Projeto freelance: planejei, arquitetei e executei um sistema de gestão e controle de LLMs em empresas — uso, custos, limites e governança de modelos."
+          en: "Freelance project: planned, architected and delivered a system for managing and controlling LLMs in companies — usage, spend, limits and model governance."
+        responsibilities:
+          pt:
+            - "Liderar o projeto de ponta a ponta: planejamento, arquitetura, implementação e entrega."
+            - "Desenhar a solução de gestão de LLMs (consumo, gastos, políticas e monitoramento)."
+            - "Construir o frontend em Next.js e o backend em Node.js."
+            - "Definir integrações com provedores de modelos e regras de controle de custo."
+          en:
+            - "Led the project end to end: planning, architecture, implementation and delivery."
+            - "Designed the LLM management solution (usage, spend, policies and monitoring)."
+            - "Built the frontend in Next.js and the backend in Node.js."
+            - "Defined integrations with model providers and cost-control rules."
+        stack: [Next.js, Node.js, TypeScript, REST APIs]
+
+  - id: bio-registro
+    logo: ""
+    url: ""
+    name:
+      pt: Bio Registro
+      en: Bio Registro
+    engagement: freelance
+    work_mode: remote
+    roles:
+      - title:
+          pt: Desenvolvedor Java e Next.js
+          en: Java and Next.js Developer
+        start: "2025-02-01"
+        end: "2025-08-31"
+        current: false
+        summary:
+          pt: "Projeto freelance: ajudei no desenvolvimento de um sistema para gestão de concursos, vagas e inscritos para provas — editais, candidaturas e acompanhamento operacional."
+          en: "Freelance project: contributed to a system for managing contests, openings and exam applicants — notices, registrations and operational follow-up."
+        responsibilities:
+          pt:
+            - "Contribuir no backend em Java com Spring Boot, APIs REST e regras de negócio de concursos e inscrições."
+            - "Apoiar a modelagem de persistência com JPA/Hibernate e banco relacional."
+            - "Participar da construção de interfaces em Next.js e TypeScript para operadores e candidatos."
+            - "Ajudar na implementação de fluxos de inscrição, validação de dados e acompanhamento de status."
+          en:
+            - "Contributed to the Java backend with Spring Boot, REST APIs and business rules for contests and registrations."
+            - "Helped model persistence with JPA/Hibernate and a relational database."
+            - "Took part in building Next.js and TypeScript interfaces for operators and applicants."
+            - "Helped implement registration flows, data validation and status tracking."
+        stack: [Java, Spring Boot, Spring, Hibernate, JPA, Next.js, TypeScript, REST APIs, PostgreSQL]
+
+academic:
   - id: cnpq
     logo: ""
     url: ""
     name:
       pt: CNPq
       en: CNPq
+    engagement: academic
+    work_mode: onsite
     roles:
       - title:
           pt: Bolsista de Iniciação Científica
@@ -252,5 +269,5 @@ education:
     start: "2021"
     end: "2025"
     note:
-      pt: Bolsa de iniciação científica CNPq.
-      en: CNPq undergraduate research scholarship.
+      pt: "Concluído em 2025. Bolsa de iniciação científica CNPq."
+      en: "Completed in 2025. CNPq undergraduate research scholarship."

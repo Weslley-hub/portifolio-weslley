@@ -1,0 +1,137 @@
+{{ $items := .items }}
+{{ $isPT := .isPT }}
+{{ $delay := .delay }}
+{{ $monthsPT := .monthsPT }}
+
+<ol class="timeline">
+  {{ range $items }}
+    {{ $company := . }}
+    {{ $hasCurrent := false }}
+    {{ range $company.roles }}{{ if .current }}{{ $hasCurrent = true }}{{ end }}{{ end }}
+    <li class="timeline__item reveal{{ if $hasCurrent }} timeline__item--current{{ end }}" style="--reveal-delay: {{ $delay }}ms">
+      <div class="timeline__marker" aria-hidden="true"></div>
+      <article class="timeline__card glass-card">
+        <header class="timeline__company-row">
+          {{ with $company.logo }}
+            {{ partial "img.html" (dict "src" . "alt" "" "class" "timeline__logo") }}
+          {{ else }}
+            <span class="timeline__logo" aria-hidden="true">
+              {{ substr (cond $isPT $company.name.pt $company.name.en) 0 1 }}
+            </span>
+          {{ end }}
+          <div class="timeline__company-block">
+            <h2 class="timeline__company">
+              {{ if $company.url }}
+                <a href="{{ $company.url }}" target="_blank" rel="noopener noreferrer">{{ if $isPT }}{{ $company.name.pt }}{{ else }}{{ $company.name.en }}{{ end }}</a>
+              {{ else }}
+                {{ if $isPT }}{{ $company.name.pt }}{{ else }}{{ $company.name.en }}{{ end }}
+              {{ end }}
+            </h2>
+            <div class="timeline__badges">
+              {{ $eng := $company.engagement }}
+              {{ if eq $eng "freelance" }}
+                <span class="timeline__badge">Freelance</span>
+              {{ else if eq $eng "academic" }}
+                <span class="timeline__badge">{{ if $isPT }}Acadêmico{{ else }}Academic{{ end }}</span>
+              {{ else if eq $eng "part-time" }}
+                <span class="timeline__badge">Part-time</span>
+              {{ else if eq $eng "full-time" }}
+                <span class="timeline__badge">{{ if $isPT }}Tempo integral{{ else }}Full-time{{ end }}</span>
+              {{ end }}
+              {{ with $company.work_mode }}
+                {{ if eq . "remote" }}
+                  <span class="timeline__badge timeline__badge--muted">{{ if $isPT }}Remoto{{ else }}Remote{{ end }}</span>
+                {{ else if eq . "onsite" }}
+                  <span class="timeline__badge timeline__badge--muted">{{ if $isPT }}Presencial{{ else }}On-site{{ end }}</span>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </header>
+
+        {{ range $company.roles }}
+          {{ $role := . }}
+          {{ $start := time.AsTime $role.start }}
+          {{ $end := now }}
+          {{ if and (not $role.current) $role.end }}
+            {{ $end = time.AsTime $role.end }}
+          {{ end }}
+          {{/* Contagem inclusiva de meses (ago–dez = 5). */}}
+          {{ $totalMonths := add (add (mul (sub $end.Year $start.Year) 12) (sub (int $end.Month) (int $start.Month))) 1 }}
+          {{ if lt $totalMonths 1 }}{{ $totalMonths = 1 }}{{ end }}
+          {{ $years := div $totalMonths 12 }}
+          {{ $remMonths := mod $totalMonths 12 }}
+
+          <div class="timeline__role">
+            <div class="timeline__meta">
+              <h3 class="timeline__title">
+                {{ if $isPT }}{{ $role.title.pt }}{{ else }}{{ $role.title.en }}{{ end }}
+                {{ with $role.engagement }}
+                  {{ if eq . "part-time" }}
+                    <span class="timeline__badge">Part-time</span>
+                  {{ end }}
+                {{ end }}
+              </h3>
+              <p class="timeline__dates">
+                <time datetime="{{ $role.start }}">
+                  {{- if $isPT -}}
+                    {{ index $monthsPT (printf "%d" (int $start.Month)) }} {{ $start.Year }}
+                  {{- else -}}
+                    {{ $start.Format "Jan 2006" }}
+                  {{- end -}}
+                </time>
+                –
+                {{ if $role.current }}
+                  <span>{{ i18n "present" }}</span>
+                {{ else }}
+                  <time datetime="{{ $role.end }}">
+                    {{- if $isPT -}}
+                      {{ index $monthsPT (printf "%d" (int $end.Month)) }} {{ $end.Year }}
+                    {{- else -}}
+                      {{ $end.Format "Jan 2006" }}
+                    {{- end -}}
+                  </time>
+                {{ end }}
+                <span class="timeline__duration">
+                  (
+                  {{- if gt $years 0 -}}{{ $years }} {{ if eq $years 1 }}{{ i18n "year" }}{{ else }}{{ i18n "years" }}{{ end }}{{- end -}}
+                  {{- if and (gt $years 0) (gt $remMonths 0) }} {{ end -}}
+                  {{- if gt $remMonths 0 -}}{{ $remMonths }} {{ if eq $remMonths 1 }}{{ i18n "month" }}{{ else }}{{ i18n "months" }}{{ end }}{{- end -}}
+                  {{- if and (eq $years 0) (eq $remMonths 0) -}}1 {{ i18n "month" }}{{- end -}}
+                  )
+                </span>
+              </p>
+            </div>
+            <p class="timeline__summary">{{ if $isPT }}{{ $role.summary.pt }}{{ else }}{{ $role.summary.en }}{{ end }}</p>
+
+            <details class="timeline__details">
+              <summary>{{ i18n "more_info" }}</summary>
+              <div class="timeline__details-panel">
+                <div>
+                  <h4>{{ i18n "responsibilities" }}</h4>
+                  <ul>
+                    {{ if $isPT }}
+                      {{ range $role.responsibilities.pt }}<li>{{ . }}</li>{{ end }}
+                    {{ else }}
+                      {{ range $role.responsibilities.en }}<li>{{ . }}</li>{{ end }}
+                    {{ end }}
+                  </ul>
+                  {{ with $role.stack }}
+                    <h4>Stack</h4>
+                    <ul class="stack-list">
+                      {{ range . }}
+                        <li>{{ partial "tech-tag.html" (dict "name" .) }}</li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+                </div>
+              </div>
+            </details>
+          </div>
+        {{ end }}
+      </article>
+    </li>
+    {{ $delay = add $delay 80 }}
+  {{ end }}
+</ol>
+{{ return $delay }}

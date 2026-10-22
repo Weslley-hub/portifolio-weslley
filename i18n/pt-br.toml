@@ -63,3 +63,21 @@ other = "Contratados"
 
 [projects_contracted_lead]
 other = "Produtos e entregas em empresas e clientes."
+
+[resume_main]
+other = "Experiência profissional"
+
+[resume_main_lead]
+other = "Vínculos principais (tempo integral ou part-time)."
+
+[resume_freelance]
+other = "Projetos freelance"
+
+[resume_freelance_lead]
+other = "Trabalhos pontuais em paralelo à experiência principal — não são trocas de emprego."
+
+[resume_academic]
+other = "Acadêmico"
+
+[resume_academic_lead]
+other = "Iniciação científica e pesquisa."

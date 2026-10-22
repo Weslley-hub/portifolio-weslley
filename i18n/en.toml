@@ -63,3 +63,21 @@ other = "Contracted"
 
 [projects_contracted_lead]
 other = "Products and deliveries for companies and clients."
+
+[resume_main]
+other = "Professional experience"
+
+[resume_main_lead]
+other = "Main roles (full-time or part-time)."
+
+[resume_freelance]
+other = "Freelance projects"
+
+[resume_freelance_lead]
+other = "Short-term work alongside the main roles — not job hopping."
+
+[resume_academic]
+other = "Academic"
+
+[resume_academic_lead]
+other = "Undergraduate research."

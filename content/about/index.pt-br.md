@@ -1,6 +1,6 @@
 ---
 title: "Sobre"
-description: "Quem é Weslley Teixeira — engenheiro full stack em Fortaleza, com foco em sistemas financeiros."
+description: "Quem é Weslley Teixeira — engenheiro de software full stack em Fortaleza, com foco em fintech e pagamentos."
 slug: about
 ---
 
@@ -8,21 +8,26 @@ slug: about
 
 {{< figure src="images/about-photo.png" alt="Weslley Teixeira" caption="Weslley Teixeira — Fortaleza, CE" >}}
 
-Sou **Weslley Teixeira**, engenheiro de software full stack em Fortaleza, Ceará, com **mais de 3 anos de experiência profissional** em produto e sistemas em produção.
+Sou **Weslley Teixeira**, engenheiro de software full stack em Fortaleza, Ceará, com **mais de 3 anos de experiência** em produto e sistemas em produção.
 
-Nos últimos anos trabalhei quase exclusivamente em sistemas onde dinheiro real se move: Internet Banking, Pix, boletos, cash-in e cash-out, integração com core bancário e plataformas BaaS (Banking as a Service), no Brasil e na América Latina. Já atuei em projetos com equipes da América Latina — México, Peru, Argentina e Colômbia.
+**Resumo rápido**
 
-Atuo hoje como Software Engineer na **PlayHub**, em produtos de streaming e entretenimento. Antes disso, ajudei a levar o **Wiiascend Internet Banking** do zero à produção (web e iOS), inclusive como Tech Lead, trabalhei no Internet Banking da **FitBank** e nos fluxos de pagamento (Pix, boleto e TED), liderei um projeto de gestão de LLMs na **Lanlink** e ajudei no desenvolvimento de um sistema de gestão de concursos, vagas e inscritos para provas na **Bio Registro**.
+- **Cargo:** Software Engineer
+- **Modelo:** remoto (FitBank foi presencial)
+- **Disponibilidade:** aberto a oportunidades remotas, inclusive times internacionais
+- **Foco:** fintech, pagamentos (Pix, boleto, TED, BaaS) e SVAs
 
-Formado em Ciência da Computação pela **Universidade Federal do Ceará (UFC)**, com bolsa de iniciação científica CNPq. Aberto a conversas sobre engenharia em bancos, fintechs e empresas de pagamento.
+Nos últimos anos trabalhei principalmente em Internet Banking, Pix, boletos, cash-in/cash-out, core bancário e plataformas BaaS, no Brasil e na América Latina — inclusive com equipes do México, Peru, Argentina e Colômbia.
+
+Atuo hoje na **PlayHub**, em SVAs (Serviços de Valor Agregado). Antes disso, ajudei a levar o **Wiiascend Internet Banking** do zero à produção (web e iOS), inclusive como Tech Lead, e trabalhei no Internet Banking da **FitBank** nos fluxos de Pix, boleto e TED. Em paralelo, fiz projetos freelance na **Lanlink** (gestão de LLMs) e na **Bio Registro** (concursos e inscritos).
+
+Formado em Ciência da Computação pela **Universidade Federal do Ceará (UFC)** — concluído em 2025 — com bolsa de iniciação científica CNPq.
 
 ## Stack
 
-- **Backend** — C#, .NET, Java (Spring Boot), Node.js e NestJS. APIs REST, serviços transacionais, webhooks assinados, processamento assíncrono e integrações com bancos, adquirentes e provedores de pagamento.
-- **Frontend** — React, Next.js, TypeScript, Angular, Redux e Tailwind CSS. Interfaces de produto, onde performance e clareza decidem se a operação realmente conclui.
-- **Mobile** — Flutter e Dart, incluindo builds, release e updates na App Store e Google Play.
-- **Cloud** — AWS com infraestrutura como código em Terraform.
-- **Segurança de aplicação** — autenticação e autorização, RBAC, OAuth 2.0, JWT, validação e sanitização de input, rate limiting, proteção contra injection, XSS e CSRF, CSP, secrets management, criptografia e tratamento de vulnerabilidades alinhado ao OWASP.
+- **Principal** — React, TypeScript, Node.js e .NET/C#. É onde atuo no dia a dia.
+- **Também trabalhei com** — Next.js, Angular, Java (Spring Boot), Flutter/Dart, AWS e Terraform.
+- **Segurança** — autenticação, autorização, boas práticas OWASP e proteção de APIs em produção.
 
 ## Idiomas
 

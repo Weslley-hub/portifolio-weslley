@@ -6,7 +6,7 @@ slug: contact
 
 ## Get in touch
 
-Open to conversations about engineering in banks, fintechs and payment companies.
+Open to **remote** opportunities (including international teams) and conversations about engineering in banks, fintechs, payments and SVAs.
 
 - **Email:** [weslleyfernando71609@gmail.com](mailto:weslleyfernando71609@gmail.com)
 - **LinkedIn:** [linkedin.com/in/weslley-fernando](https://www.linkedin.com/in/weslley-fernando)

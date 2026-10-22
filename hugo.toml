@@ -20,8 +20,8 @@ author = "Weslley Teixeira"
 description = "Full Stack Software Engineer especializado em .NET, C#, React e sistemas financeiros."
 keywords = "software engineer, fullstack, .NET, C#, React, fintech, Pix, BaaS, Fortaleza"
 info = [
-  "Full Stack Software Engineer",
-  "na **PlayHub**"
+  "Software Engineer",
+  "SVAs na **PlayHub**"
 ]
 avatarURL = "images/avatar.png"
 dateFormat = "2 January 2006"
@@ -76,8 +76,8 @@ ariaLabel = "Enviar e-mail para Weslley Teixeira"
       description = "Full Stack Software Engineer especializado em .NET, C#, React e sistemas financeiros."
       keywords = "engenheiro de software, fullstack, .NET, C#, React, fintech, Pix, BaaS, Fortaleza"
       info = [
-        "Full Stack Software Engineer",
-        "na **PlayHub**"
+        "Software Engineer",
+        "SVAs na **PlayHub**"
       ]
       ctaResume = "Ver currículo"
       ctaContact = "Fale comigo"
@@ -108,8 +108,8 @@ ariaLabel = "Enviar e-mail para Weslley Teixeira"
       description = "Full Stack Software Engineer specialized in .NET, C#, React and financial systems."
       keywords = "software engineer, fullstack, .NET, C#, React, fintech, Pix, BaaS, Fortaleza"
       info = [
-        "Full Stack Software Engineer",
-        "at **PlayHub**"
+        "Software Engineer",
+        "SVAs at **PlayHub**"
       ]
       ctaResume = "View resume"
       ctaContact = "Get in touch"

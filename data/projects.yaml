@@ -137,19 +137,19 @@ contracted:
     image: ""
     status: wip
     name:
-      pt: PlayHub — streaming e entretenimento
-      en: PlayHub — streaming and entertainment
+      pt: PlayHub — SVAs
+      en: PlayHub — SVAs
     description:
       pt: >
-        Engenharia full stack em produtos de streaming, integrando catálogos e serviços
-        de Globoplay, Apple TV+, Deezer, Disney+ e Universal+. APIs e regras de negócio
-        em C#/.NET/ASP.NET, interfaces em React/TypeScript, ciclo completo até
+        Engenharia full stack em SVAs (Serviços de Valor Agregado), integrando catálogos
+        e serviços de Globoplay, Apple TV+, Deezer, Disney+ e Universal+. APIs e regras
+        de negócio em C#/.NET/ASP.NET, interfaces em React/TypeScript, ciclo completo até
         monitoramento em produção.
       en: >
-        Full stack engineering on streaming products, integrating catalogs and services
-        from Globoplay, Apple TV+, Deezer, Disney+ and Universal+. APIs and business
-        rules in C#/.NET/ASP.NET, React/TypeScript interfaces, full cycle through
-        production monitoring.
+        Full stack engineering on SVAs (Value-Added Services), integrating catalogs and
+        services from Globoplay, Apple TV+, Deezer, Disney+ and Universal+. APIs and
+        business rules in C#/.NET/ASP.NET, React/TypeScript interfaces, full cycle
+        through production monitoring.
     tags: [C#, .NET, ASP.NET, React, TypeScript, REST APIs, SQL]
     links:
       repo: ""
