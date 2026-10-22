@@ -1,0 +1,14 @@
+{{ $lang := .Site.Language.Lang }}
+{{ $isPT := or (eq $lang "pt-br") (hasPrefix $lang "pt") }}
+{{ $data := .Site.Data.experience }}
+
+<div class="resume-actions">
+  {{ if $isPT }}
+    <a class="btn btn-primary" href="{{ "cv/cv-pt.pdf" | relURL }}" download>{{ i18n "download_cv" }}</a>
+  {{ else }}
+    <a class="btn btn-primary" href="{{ "cv/cv-en.pdf" | relURL }}" download>{{ i18n "download_cv" }}</a>
+  {{ end }}
+  <a class="btn btn-secondary" href="{{ .Site.Params.linkedinURL }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+</div>
+
+{{ partial "timeline.html" (dict "companies" $data.companies "education" $data.education "lang" $lang "isPT" $isPT) }}

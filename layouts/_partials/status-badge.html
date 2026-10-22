@@ -1,0 +1,11 @@
+{{ $status := .status }}
+{{ $class := "status-done" }}
+{{ $label := i18n "status_done" }}
+{{ if eq $status "wip" }}
+  {{ $class = "status-wip" }}
+  {{ $label = i18n "status_wip" }}
+{{ else if eq $status "paused" }}
+  {{ $class = "status-paused" }}
+  {{ $label = i18n "status_paused" }}
+{{ end }}
+<span class="status-badge {{ $class }}">{{ $label }}</span>

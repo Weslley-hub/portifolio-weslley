@@ -1,0 +1,52 @@
+{{/*
+  Responsive image partial — WebP + srcset when processable.
+  Params: src (path under assets/ or static/), alt, class, widths (optional)
+*/}}
+{{ $src := .src }}
+{{ $alt := default "" .alt }}
+{{ $class := default "img-responsive" .class }}
+{{ $widths := default (slice 400 800 1200) .widths }}
+{{ $lazy := default true .lazy }}
+
+{{ $res := resources.Get $src }}
+{{ if not $res }}
+  {{ $res = resources.Get (printf "images/%s" $src) }}
+{{ end }}
+
+{{ if and $res (in (slice "image/jpeg" "image/png" "image/tiff" "image/webp" "image/gif") $res.MediaType.Type) }}
+  {{ $srcset := slice }}
+  {{ range $widths }}
+    {{ if ge $res.Width . }}
+      {{ $resized := $res.Resize (printf "%dx webp" .) }}
+      {{ $srcset = $srcset | append (printf "%s %dw" $resized.RelPermalink .) }}
+    {{ end }}
+  {{ end }}
+  {{ $fallback := $res.Resize "800x webp" }}
+  {{ if lt $res.Width 800 }}
+    {{ $fallback = $res.Resize (printf "%dx webp" $res.Width) }}
+  {{ end }}
+  <img
+    class="{{ $class }}"
+    src="{{ $fallback.RelPermalink }}"
+    {{ if gt (len $srcset) 0 }}srcset="{{ delimit $srcset ", " }}" sizes="(max-width: 640px) 100vw, 800px"{{ end }}
+    alt="{{ $alt }}"
+    width="{{ $fallback.Width }}"
+    height="{{ $fallback.Height }}"
+    {{ if $lazy }}loading="lazy" decoding="async"{{ end }}
+  />
+{{ else }}
+  {{ $url := $src | relURL }}
+  {{ if hasPrefix $src "http" }}
+    {{ $url = $src }}
+  {{ else if hasPrefix $src "/" }}
+    {{ $url = $src | relURL }}
+  {{ else }}
+    {{ $url = $src | relURL }}
+  {{ end }}
+  <img
+    class="{{ $class }}"
+    src="{{ $url }}"
+    alt="{{ $alt }}"
+    {{ if $lazy }}loading="lazy" decoding="async"{{ end }}
+  />
+{{ end }}

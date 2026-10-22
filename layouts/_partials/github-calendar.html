@@ -1,0 +1,23 @@
+{{ $user := default site.Params.githubUsername "Weslley-hub" }}
+{{ $avatar := printf "https://github.com/%s.png?size=80" $user }}
+<section class="github-calendar glass-card reveal" aria-label="{{ i18n "github_contributions" }}">
+  <div class="github-calendar__header">
+    <img class="github-calendar__avatar" src="{{ $avatar }}" alt="" width="40" height="40" loading="lazy" />
+    <div>
+      <h2 style="margin:0;font-size:1.1rem">{{ i18n "github_contributions" }}</h2>
+      <a class="github-calendar__user" href="https://github.com/{{ $user }}" target="_blank" rel="noopener noreferrer">@{{ $user }}</a>
+    </div>
+  </div>
+  <img
+    class="github-calendar__img"
+    src="https://ghchart.rshah.org/0f6b4c/{{ $user }}"
+    alt="{{ i18n "github_chart_alt" }}"
+    loading="lazy"
+    width="663"
+    height="104"
+    data-ghchart
+  />
+  <p class="github-calendar__fallback" hidden>
+    <a href="https://github.com/{{ $user }}" target="_blank" rel="noopener noreferrer">github.com/{{ $user }}</a>
+  </p>
+</section>

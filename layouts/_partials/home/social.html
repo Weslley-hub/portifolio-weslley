@@ -1,0 +1,33 @@
+{{/*
+  Override social icons to include aria-label from params.
+*/}}
+<div class="social">
+  <nav role="navigation" aria-label="{{ i18n "social_links" | default "Social links" }}">
+    <ul>
+      {{ range sort .Site.Params.social "weight" }}
+        {{ if .icon }}
+          <li>
+            <a
+              href="{{ .url }}"
+              aria-label="{{ default .name .ariaLabel }}"
+              {{ with .rel }}rel="{{ . }}"{{ else }}rel="noopener noreferrer"{{ end }}
+              {{ with .type }}type="{{ . }}"{{ end }}
+              {{ with .target }}target="{{ . }}"{{ else }}target="_blank"{{ end }}
+            >
+              <i class="{{ .icon }}" aria-hidden="true"></i>
+            </a>
+          </li>
+        {{ else }}
+          <li>
+            <a
+              href="{{ .url }}"
+              aria-label="{{ default .name .ariaLabel }}"
+              {{ with .rel }}rel="{{ . }}"{{ end }}
+              {{ with .type }}type="{{ . }}"{{ end }}
+            >{{ .name }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </nav>
+</div>

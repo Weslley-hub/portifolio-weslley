@@ -1,0 +1,17 @@
+{
+  "name": "Weslley Teixeira",
+  "short_name": "Weslley",
+  "description": "Portfólio de Weslley Teixeira — Full Stack Software Engineer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f5f2",
+  "theme_color": "#0f6b4c",
+  "icons": [
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<nav class="navigation" aria-label="Primary">
+  <section class="container">
+    {{ with .Site }}
+    <a class="navigation-title" href="{{ absLangURL "" }}">
+      {{ .Title }}
+    </a>
+    {{ end }}
+    {{ if or .Site.Menus.main hugo.IsMultilingual }}
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle" tabindex="0">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+        <span class="sr-only">Menu</span>
+      </label>
+      <ul class="navigation-list">
+        {{ $current := . }}
+        {{ with .Site.Menus.main }}
+          {{ range sort . }}
+            {{ if ne .Params.class "external" }}
+              {{ $url := .URL | relLangURL }}
+              {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+              {{ if and (eq $current.RelPermalink $url) (not $active) }}{{ $active = true }}{{ end }}
+              {{ if and (eq .URL "/") (eq $current.RelPermalink (absLangURL "" | relURL | replaceRE "^https?://[^/]+" "")) }}{{ $active = true }}{{ end }}
+              {{ if or (eq $current.RelPermalink $url) (and (ne .URL "/") (hasPrefix $current.RelPermalink $url)) }}
+                {{ $active = true }}
+              {{ end }}
+              <li class="navigation-item">
+                <a class="navigation-link{{ if $active }} is-active{{ end }}" href="{{ $url }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+              </li>
+            {{ else }}
+              <li class="navigation-item">
+                <a class="navigation-link external" href="{{ .URL }}" target="_blank" rel="noopener noreferrer">{{ .Name }} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" style="font-size:0.7em"></i></a>
+              </li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if hugo.IsMultilingual }}
+          <li class="navigation-item menu-separator" aria-hidden="true"><span>|</span></li>
+          <li class="navigation-item lang-switch" role="navigation" aria-label="Language">
+            {{ range .AllTranslations }}
+              <a href="{{ .RelPermalink }}" hreflang="{{ .Language.LanguageCode }}" class="{{ if eq .Language $.Language }}is-active{{ end }}"{{ if eq .Language $.Language }} aria-current="true"{{ end }}>{{ .Language.LanguageName }}</a>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </section>
+</nav>

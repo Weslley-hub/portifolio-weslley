@@ -1,0 +1,25 @@
+{{ $lang := .Site.Language.Lang }}
+{{ $isPT := or (eq $lang "pt-br") (hasPrefix $lang "pt") }}
+{{ $data := .Site.Data.projects }}
+
+{{ partial "github-calendar.html" . }}
+
+<section class="projects-section" aria-labelledby="projects-personal">
+  <h2 id="projects-personal" class="projects-section__title">{{ i18n "projects_personal" }}</h2>
+  <p class="projects-section__lead">{{ i18n "projects_personal_lead" }}</p>
+  <div class="project-grid">
+    {{ range $data.personal }}
+      {{ partial "project-card.html" (dict "project" . "isPT" $isPT) }}
+    {{ end }}
+  </div>
+</section>
+
+<section class="projects-section" aria-labelledby="projects-contracted">
+  <h2 id="projects-contracted" class="projects-section__title">{{ i18n "projects_contracted" }}</h2>
+  <p class="projects-section__lead">{{ i18n "projects_contracted_lead" }}</p>
+  <div class="project-grid">
+    {{ range $data.contracted }}
+      {{ partial "project-card.html" (dict "project" . "isPT" $isPT) }}
+    {{ end }}
+  </div>
+</section>

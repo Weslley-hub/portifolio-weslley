@@ -1,0 +1,200 @@
+﻿companies:
+  - id: playhub
+    logo: ""
+    url: ""
+    name:
+      pt: PlayHub
+      en: PlayHub
+    roles:
+      - title:
+          pt: Software Engineer
+          en: Software Engineer
+        start: "2025-09-01"
+        end: ""
+        current: true
+        summary:
+          pt: "Engenharia full stack em produtos de streaming e entretenimento, integrando catálogos e serviços de Globoplay, Apple TV+, Deezer, Disney+ e Universal+."
+          en: "Full stack engineering on streaming and entertainment products, integrating catalogs and services from Globoplay, Apple TV+, Deezer, Disney+ and Universal+."
+        responsibilities:
+          pt:
+            - "Desenvolver e manter APIs e serviços em C#, .NET e ASP.NET, cobrindo regras de negócio, integrações e evolução de sistemas em produção."
+            - "Construir interfaces e componentes reutilizáveis em React e TypeScript, integrados às APIs do produto."
+            - "Atuar no ciclo completo: refinamento, implementação, testes, code review, deploy e monitoramento."
+            - "Investigar e resolver incidentes de produção, da causa raiz à correção."
+          en:
+            - "Develop and maintain APIs and services in C#, .NET and ASP.NET, covering business rules, third-party integrations and production evolution."
+            - "Build reusable interfaces and components in React and TypeScript, integrated with product APIs."
+            - "Work across the full cycle: refinement, implementation, testing, code review, deployment and monitoring."
+            - "Investigate and resolve production incidents, from root cause to fix."
+        stack: [C#, .NET, ASP.NET, React, TypeScript, REST APIs, SQL]
+
+  - id: wii-ascend
+    logo: ""
+    url: ""
+    name:
+      pt: Wii Ascend Technologies
+      en: Wii Ascend Technologies
+    roles:
+      - title:
+          pt: "Software Engineer | Tech Lead"
+          en: "Software Engineer | Tech Lead"
+        start: "2025-08-01"
+        end: "2025-11-30"
+        current: false
+        summary:
+          pt: "Tech Lead do Wiiascend Internet Banking — conta digital com Pix, boletos, pagamentos e gestão de conta, integrada a core bancário e plataformas BaaS. Papel part-time, em paralelo à PlayHub."
+          en: "Tech Lead of Wiiascend Internet Banking — a digital account with Pix, boletos, payments and account management, integrated with a banking core and BaaS platforms. Part-time role, held in parallel with PlayHub."
+        responsibilities:
+          pt:
+            - "Liderar tecnicamente o time: desenho de solução, code review, padrões e suporte hands-on."
+            - "Definir e evoluir a arquitetura da aplicação."
+            - "Construir o frontend do Internet Banking em React, TypeScript, Redux, Tailwind CSS e React Hook Form."
+            - "Integrar o produto ao core bancário para Pix, boletos, pagamentos e gestão de conta, com idempotência, reprocessamento e reconciliação."
+            - "Desenvolver serviços backend em Node.js e TypeScript no domínio financeiro, incluindo webhooks e processamento assíncrono."
+            - "Operar na AWS com infraestrutura como código em Terraform."
+          en:
+            - "Lead the development team technically: solution design, code review, standards and hands-on support."
+            - "Define and evolve the application architecture."
+            - "Build the Internet Banking frontend in React, TypeScript, Redux, Tailwind CSS and React Hook Form."
+            - "Integrate with the banking core for Pix, boletos, payments and account management, handling idempotency, reprocessing and reconciliation."
+            - "Develop backend services in Node.js and TypeScript for the financial domain, including webhooks and async processing."
+            - "Operate on AWS with infrastructure as code in Terraform."
+        stack: [React, TypeScript, Redux, Tailwind CSS, Node.js, Flutter, Dart, AWS, Terraform, Stripe, Fitbank, BaaS, Pix, REST APIs]
+      - title:
+          pt: Software Engineer
+          en: Software Engineer
+        start: "2025-02-01"
+        end: "2025-08-31"
+        current: false
+        summary:
+          pt: "Construção do Wiiascend Internet Banking do zero — web e iOS — com integração a core bancário e provedores de pagamento brasileiros."
+          en: "Built Wiiascend Internet Banking from the ground up — web and iOS — including integration with a banking core and Brazilian payment providers."
+        responsibilities:
+          pt:
+            - "Construir o frontend do Internet Banking em React, TypeScript, Redux, Tailwind CSS e React Hook Form, do primeiro commit à produção."
+            - "Desenvolver o app iOS em Flutter e Dart com BLoC, mantendo paridade de features com a web."
+            - "Integrar plataformas BaaS para fluxos completos de cash-in, cash-out e reconciliação."
+            - "Implementar integração com core bancário para Pix, boletos, pagamentos e gestão de conta."
+            - "Desenvolver serviços backend em Node.js e TypeScript."
+            - "Publicar e manter o app na App Store: builds, versionamento e updates."
+            - "Traduzir protótipos Figma em interface, com consistência entre web e mobile."
+            - "Provisionar infraestrutura na AWS com Terraform."
+          en:
+            - "Built the Internet Banking frontend in React, TypeScript, Redux, Tailwind CSS and React Hook Form, from first commit to production."
+            - "Developed the iOS app in Flutter and Dart using BLoC, keeping feature parity with the web version."
+            - "Integrated BaaS platforms for complete cash-in, cash-out and reconciliation flows."
+            - "Implemented banking core integration for Pix, boletos, payments and account management."
+            - "Developed backend services in Node.js and TypeScript."
+            - "Released and maintained the app on the App Store: builds, versioning and updates."
+            - "Translated Figma prototypes into UI, keeping consistency between web and mobile."
+            - "Provisioned infrastructure on AWS with Terraform."
+        stack: [React, TypeScript, Redux, Tailwind CSS, React Hook Form, Node.js, Flutter, Dart, iOS, AWS, Terraform, Stripe, Fitbank, BaaS, Pix, REST APIs]
+
+  - id: fitbank
+    logo: ""
+    url: ""
+    name:
+      pt: FitBank
+      en: FitBank
+    roles:
+      - title:
+          pt: Software Developer
+          en: Software Developer
+        start: "2024-08-01"
+        end: "2025-02-28"
+        current: false
+        summary:
+          pt: "Desenvolvimento full stack em produtos financeiros da FitBank — Internet Banking, integrações bancárias e ERP — atendendo operações no Brasil e na América Latina."
+          en: "Full stack development on FitBank financial products — Internet Banking, banking integrations and ERP — serving operations in Brazil and Latin America."
+        responsibilities:
+          pt:
+            - "Refatorar, com o time, o fluxo completo de Pix do Internet Banking, melhorando performance, rastreabilidade e confiabilidade de transações em tempo real."
+            - "Desenvolver e manter APIs em C# e .NET 6 para operações financeiras."
+            - "Construir interfaces em React, TypeScript, Redux, Tailwind CSS, Styled Components e React Hook Form."
+            - "Integrar APIs bancárias em ecossistema BaaS: pagamentos, transferências, extratos e reconciliação."
+            - "Trabalhar com meios de pagamento regulamentados no Brasil, incluindo Pix e transferências."
+            - "Contribuir no ERP Xpertia, integrando processos financeiros e automação operacional."
+            - "Atuar em Scrum com times multidisciplinares, participando de definições técnicas e entrega contínua."
+          en:
+            - "Refactored, with the team, the entire Pix flow of the Internet Banking, improving performance, traceability and reliability of real-time transactions."
+            - "Developed and maintained APIs in C# and .NET 6 for financial operations."
+            - "Built interfaces in React, TypeScript, Redux, Tailwind CSS, Styled Components and React Hook Form."
+            - "Integrated banking APIs within a BaaS ecosystem: payments, transfers, statements and reconciliation."
+            - "Worked with regulated Brazilian payment methods, including Pix and bank transfers."
+            - "Contributed to the Xpertia ERP, integrating financial processes and operational automation."
+            - "Worked in Scrum with cross-functional teams, taking part in technical definitions and continuous delivery."
+        stack: [C#, .NET 6, React, TypeScript, Redux, Tailwind CSS, Styled Components, React Hook Form, REST APIs, BaaS, Pix, PostgreSQL, SQL Server]
+
+  - id: newm
+    logo: ""
+    url: ""
+    name:
+      pt: NewM
+      en: NewM
+    roles:
+      - title:
+          pt: Software Developer
+          en: Software Developer
+        start: "2023-04-01"
+        end: "2024-08-31"
+        current: false
+        summary:
+          pt: "Desenvolvimento full stack de sistemas corporativos, com foco no ERP de consórcios Rodobens."
+          en: "Full stack development of corporate systems, focused on the Rodobens consortium ERP."
+        responsibilities:
+          pt:
+            - "Desenvolver features críticas do ERP de consórcios Rodobens, da análise à entrega em produção."
+            - "Construir REST APIs em C#, .NET e Node.js, com organização em camadas e regras do domínio financeiro."
+            - "Desenvolver interfaces em React."
+            - "Otimizar queries SQL Server, com foco em performance e integridade de dados."
+            - "Padronizar ambientes com Docker, apoiando o pipeline de desenvolvimento e deploy."
+            - "Manter e evoluir sistemas legados em PHP e Laravel."
+          en:
+            - "Developed critical features of the Rodobens consortium ERP, from analysis to production delivery."
+            - "Built REST APIs in C#, .NET and Node.js, with layered organization and financial domain business rules."
+            - "Developed interfaces in React."
+            - "Optimized SQL Server queries, focused on performance and data integrity."
+            - "Standardized environments with Docker, supporting the development and deployment pipeline."
+            - "Maintained and evolved legacy systems in PHP and Laravel."
+        stack: [C#, .NET, Node.js, React, PHP, Laravel, SQL Server, Docker]
+
+  - id: cnpq
+    logo: ""
+    url: ""
+    name:
+      pt: CNPq
+      en: CNPq
+    roles:
+      - title:
+          pt: Bolsista de Iniciação Científica
+          en: Undergraduate Research Fellow
+        start: "2021-09-01"
+        end: "2023-04-30"
+        current: false
+        summary:
+          pt: "Bolsa CNPq de iniciação científica como desenvolvedor e pesquisador em física em jogos e desenvolvimento de jogos educativos (Crato, CE)."
+          en: "CNPq undergraduate research scholarship, working as developer and researcher on physics in games and educational game development (Crato, CE)."
+        responsibilities:
+          pt:
+            - "Desenvolver jogos em C++, aplicando conceitos de simulação física."
+            - "Modelar assets 3D no Blender e construir ambientes interativos no Unity."
+            - "Unir pesquisa e implementação, transformando conceitos acadêmicos em software funcional."
+          en:
+            - "Developed games in C++, applying physics simulation concepts."
+            - "Modeled 3D assets in Blender and built interactive environments in Unity."
+            - "Combined research and implementation, turning academic concepts into working software."
+        stack: [C++, Unity, Blender]
+
+education:
+  - id: ufc
+    name:
+      pt: Universidade Federal do Ceará (UFC)
+      en: Federal University of Ceará (UFC)
+    degree:
+      pt: Bacharelado em Ciência da Computação
+      en: Bachelor's degree in Computer Science
+    start: "2021"
+    end: "2025"
+    note:
+      pt: Bolsa de iniciação científica CNPq.
+      en: CNPq undergraduate research scholarship.

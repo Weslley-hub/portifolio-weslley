@@ -1,0 +1,65 @@
+[download_cv]
+other = "Download CV (PDF)"
+
+[present]
+other = "Present"
+
+[year]
+other = "year"
+
+[years]
+other = "years"
+
+[month]
+other = "month"
+
+[months]
+other = "months"
+
+[more_info]
+other = "More details"
+
+[responsibilities]
+other = "Responsibilities"
+
+[education]
+other = "Education"
+
+[status_wip]
+other = "WIP"
+
+[status_done]
+other = "Done"
+
+[status_paused]
+other = "Paused"
+
+[repo]
+other = "Repository"
+
+[demo]
+other = "Demo"
+
+[store]
+other = "Store"
+
+[github_contributions]
+other = "GitHub contributions"
+
+[github_chart_alt]
+other = "GitHub contribution chart for Weslley-hub"
+
+[social_links]
+other = "Social links"
+
+[projects_personal]
+other = "Personal"
+
+[projects_personal_lead]
+other = "Open source projects and personal initiatives."
+
+[projects_contracted]
+other = "Contracted"
+
+[projects_contracted_lead]
+other = "Products and deliveries for companies and clients."

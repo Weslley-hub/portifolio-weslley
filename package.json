@@ -1,0 +1,14 @@
+{
+  "name": "weslley-teixeira-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfólio pessoal de Weslley Teixeira (Hugo + hugo-coder)",
+  "scripts": {
+    "dev": ".tools/hugo.exe server -D",
+    "build": ".tools/hugo.exe --minify"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.5",
+    "@fontsource/jetbrains-mono": "^5.2.5"
+  }
+}

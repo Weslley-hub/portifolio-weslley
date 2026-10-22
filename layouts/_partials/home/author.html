@@ -1,0 +1,13 @@
+<h1>{{ .Site.Params.author }}</h1>
+{{ $info := .Site.Params.info }}
+{{ if reflect.IsSlice $info }}
+  {{ range $i, $line := $info }}
+    {{ if eq $i 0 }}
+      <h2>{{ $line | markdownify }}</h2>
+    {{ else }}
+      <p class="hero-company">{{ $line | markdownify }}</p>
+    {{ end }}
+  {{ end }}
+{{ else }}
+  <h2>{{ $info | markdownify }}</h2>
+{{ end }}

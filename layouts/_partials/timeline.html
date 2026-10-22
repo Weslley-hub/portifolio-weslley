@@ -1,0 +1,110 @@
+{{ $companies := .companies }}
+{{ $education := .education }}
+{{ $isPT := .isPT }}
+{{ $delay := 0 }}
+
+<ol class="timeline">
+  {{ range $companies }}
+    {{ $company := . }}
+    {{ $hasCurrent := false }}
+    {{ range $company.roles }}{{ if .current }}{{ $hasCurrent = true }}{{ end }}{{ end }}
+    <li class="timeline__item reveal{{ if $hasCurrent }} timeline__item--current{{ end }}" style="--reveal-delay: {{ $delay }}ms">
+      <div class="timeline__marker" aria-hidden="true"></div>
+      <article class="timeline__card glass-card">
+        <header class="timeline__company-row">
+          {{ with $company.logo }}
+            {{ partial "img.html" (dict "src" . "alt" "" "class" "timeline__logo") }}
+          {{ else }}
+            <span class="timeline__logo" aria-hidden="true" style="display:grid;place-items:center;font-weight:700;color:var(--color-accent)">
+              {{ substr (cond $isPT $company.name.pt $company.name.en) 0 1 }}
+            </span>
+          {{ end }}
+          <h2 class="timeline__company">
+            {{ if $company.url }}
+              <a href="{{ $company.url }}" target="_blank" rel="noopener noreferrer">{{ if $isPT }}{{ $company.name.pt }}{{ else }}{{ $company.name.en }}{{ end }}</a>
+            {{ else }}
+              {{ if $isPT }}{{ $company.name.pt }}{{ else }}{{ $company.name.en }}{{ end }}
+            {{ end }}
+          </h2>
+        </header>
+
+        {{ range $company.roles }}
+          {{ $role := . }}
+          {{ $start := time.AsTime $role.start }}
+          {{ $end := now }}
+          {{ if and (not $role.current) $role.end }}
+            {{ $end = time.AsTime $role.end }}
+          {{ end }}
+          {{ $totalMonths := add (mul (sub $end.Year $start.Year) 12) (sub (int $end.Month) (int $start.Month)) }}
+          {{ if lt $totalMonths 0 }}{{ $totalMonths = 0 }}{{ end }}
+          {{ $years := div $totalMonths 12 }}
+          {{ $remMonths := mod $totalMonths 12 }}
+
+          <div class="timeline__role">
+            <div class="timeline__meta">
+              <h3 class="timeline__title">{{ if $isPT }}{{ $role.title.pt }}{{ else }}{{ $role.title.en }}{{ end }}</h3>
+              <p class="timeline__dates">
+                <time datetime="{{ $role.start }}">{{ $start.Format "Jan 2006" }}</time>
+                –
+                {{ if $role.current }}
+                  <span>{{ i18n "present" }}</span>
+                {{ else }}
+                  <time datetime="{{ $role.end }}">{{ $end.Format "Jan 2006" }}</time>
+                {{ end }}
+                <span class="timeline__duration">
+                  (
+                  {{- if gt $years 0 -}}{{ $years }} {{ if eq $years 1 }}{{ i18n "year" }}{{ else }}{{ i18n "years" }}{{ end }}{{- end -}}
+                  {{- if and (gt $years 0) (gt $remMonths 0) }} {{ end -}}
+                  {{- if gt $remMonths 0 -}}{{ $remMonths }} {{ if eq $remMonths 1 }}{{ i18n "month" }}{{ else }}{{ i18n "months" }}{{ end }}{{- end -}}
+                  {{- if and (eq $years 0) (eq $remMonths 0) -}}&lt; 1 {{ i18n "month" }}{{- end -}}
+                  )
+                </span>
+              </p>
+            </div>
+            <p class="timeline__summary">{{ if $isPT }}{{ $role.summary.pt }}{{ else }}{{ $role.summary.en }}{{ end }}</p>
+
+            <details class="timeline__details">
+              <summary>{{ i18n "more_info" }}</summary>
+              <div class="timeline__details-panel">
+                <div>
+                  <h4>{{ i18n "responsibilities" }}</h4>
+                  <ul>
+                    {{ if $isPT }}
+                      {{ range $role.responsibilities.pt }}<li>{{ . }}</li>{{ end }}
+                    {{ else }}
+                      {{ range $role.responsibilities.en }}<li>{{ . }}</li>{{ end }}
+                    {{ end }}
+                  </ul>
+                  {{ with $role.stack }}
+                    <h4>Stack</h4>
+                    <ul class="stack-list">
+                      {{ range . }}
+                        <li>{{ partial "tech-tag.html" (dict "name" .) }}</li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+                </div>
+              </div>
+            </details>
+          </div>
+        {{ end }}
+      </article>
+    </li>
+    {{ $delay = add $delay 80 }}
+  {{ end }}
+
+  {{ range $education }}
+    <li class="timeline__item timeline__item--edu reveal" style="--reveal-delay: {{ $delay }}ms">
+      <div class="timeline__marker" aria-hidden="true"></div>
+      <article class="timeline__card glass-card">
+        <h2 class="timeline__company">{{ i18n "education" }}</h2>
+        <h3 class="timeline__title">{{ if $isPT }}{{ .degree.pt }}{{ else }}{{ .degree.en }}{{ end }}</h3>
+        <p class="timeline__dates">{{ if $isPT }}{{ .name.pt }}{{ else }}{{ .name.en }}{{ end }} · {{ .start }} – {{ .end }}</p>
+        {{ with .note }}
+          <p class="timeline__summary">{{ if $isPT }}{{ .pt }}{{ else }}{{ .en }}{{ end }}</p>
+        {{ end }}
+      </article>
+    </li>
+    {{ $delay = add $delay 80 }}
+  {{ end }}
+</ol>

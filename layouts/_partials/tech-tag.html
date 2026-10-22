@@ -1,0 +1,17 @@
+{{ $name := .name }}
+{{ $tech := index site.Data.tech.items $name }}
+{{ $color := "#0f6b4c" }}
+{{ $icon := "" }}
+{{ if $tech }}
+  {{ $color = default $color $tech.color }}
+  {{ $icon = $tech.icon }}
+{{ end }}
+<span class="tech-tag" style="--tech-color: {{ $color }}">
+  {{ if $icon }}
+    {{ $iconPath := printf "icons/tech/%s.svg" $icon }}
+    {{ with resources.Get $iconPath }}
+      <span class="tech-tag__icon" aria-hidden="true">{{ .Content | safeHTML }}</span>
+    {{ end }}
+  {{ end }}
+  <span class="tech-tag__label">{{ $name }}</span>
+</span>

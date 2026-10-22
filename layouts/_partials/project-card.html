@@ -1,0 +1,34 @@
+{{ $p := .project }}
+{{ $isPT := .isPT }}
+
+<article class="project-card glass-card reveal">
+  <header class="project-card__header">
+    <div class="project-card__icon" aria-hidden="true">
+      {{ if $p.image }}
+        {{ partial "img.html" (dict "src" $p.image "alt" "" "class" "") }}
+      {{ else }}
+        <i class="{{ default "fa-solid fa-folder" $p.icon }}"></i>
+      {{ end }}
+    </div>
+    <div class="project-card__titles">
+      <h2 class="project-card__title">{{ if $isPT }}{{ $p.name.pt }}{{ else }}{{ $p.name.en }}{{ end }}</h2>
+      {{ partial "status-badge.html" (dict "status" $p.status) }}
+    </div>
+  </header>
+
+  <p class="project-card__desc">{{ if $isPT }}{{ $p.description.pt }}{{ else }}{{ $p.description.en }}{{ end }}</p>
+
+  {{ with $p.tags }}
+    <ul class="project-card__tags">
+      {{ range . }}
+        <li>{{ partial "tech-tag.html" (dict "name" .) }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+  <div class="project-card__actions">
+    {{ partial "action-button.html" (dict "url" $p.links.repo "kind" "repo") }}
+    {{ partial "action-button.html" (dict "url" $p.links.demo "kind" "demo") }}
+    {{ partial "action-button.html" (dict "url" $p.links.store "kind" "store") }}
+  </div>
+</article>

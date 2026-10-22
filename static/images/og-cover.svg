@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f6b4c"/>
+      <stop offset="100%" stop-color="#1a3a4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="80" y="280" font-family="Segoe UI, sans-serif" font-size="72" font-weight="700" fill="#f7f5f2">Weslley Teixeira</text>
+  <text x="80" y="360" font-family="Segoe UI, sans-serif" font-size="36" fill="#d7ebe2">Full Stack Software Engineer</text>
+  <text x="80" y="420" font-family="Segoe UI, sans-serif" font-size="24" fill="#b7d5c8">.NET � C# � React � sistemas financeiros</text>
+</svg>

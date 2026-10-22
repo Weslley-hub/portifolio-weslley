@@ -1,0 +1,10 @@
+{{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
+  {{ with .Site.Params.avatarURL }}
+    <div class="avatar hero-avatar">
+      {{ partial "img.html" (dict "src" . "alt" $.Site.Params.author "class" "" "lazy" false) }}
+    </div>
+  {{ end }}
+{{ end }}
+{{ with .Site.Params.gravatar }}
+  <div class="avatar hero-avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" width="240" height="240" alt="{{ $.Site.Params.author }}"></div>
+{{ end }}

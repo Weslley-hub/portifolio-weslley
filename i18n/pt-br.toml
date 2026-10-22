@@ -1,0 +1,65 @@
+[download_cv]
+other = "Baixar CV (PDF)"
+
+[present]
+other = "Atual"
+
+[year]
+other = "ano"
+
+[years]
+other = "anos"
+
+[month]
+other = "mês"
+
+[months]
+other = "meses"
+
+[more_info]
+other = "Mais detalhes"
+
+[responsibilities]
+other = "Responsabilidades"
+
+[education]
+other = "Formação"
+
+[status_wip]
+other = "WIP"
+
+[status_done]
+other = "Concluído"
+
+[status_paused]
+other = "Pausado"
+
+[repo]
+other = "Repositório"
+
+[demo]
+other = "Demo"
+
+[store]
+other = "Loja"
+
+[github_contributions]
+other = "Contribuições no GitHub"
+
+[github_chart_alt]
+other = "Gráfico de contribuições do GitHub de Weslley-hub"
+
+[social_links]
+other = "Redes sociais"
+
+[projects_personal]
+other = "Pessoal"
+
+[projects_personal_lead]
+other = "Projetos open source e iniciativas próprias."
+
+[projects_contracted]
+other = "Contratados"
+
+[projects_contracted_lead]
+other = "Produtos e entregas em empresas e clientes."

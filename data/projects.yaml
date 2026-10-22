@@ -1,0 +1,133 @@
+personal:
+  - id: finlar
+    featured: true
+    icon: "fa-solid fa-wallet"
+    image: ""
+    status: done
+    name:
+      pt: Finlar
+      en: Finlar
+    description:
+      pt: >
+        Assistente financeiro da família no Telegram. Você escreve como fala —
+        "gastei 45 no almoço", "recebi 5500 de salário" — e o bot organiza receitas,
+        despesas, cartões, contas e o resumo do mês. Funciona só no grupo da família
+        (não no chat privado): linguagem natural, recorrências e parcelas, limites de
+        cartão, orçamento por categoria, OCR de comprovantes (foto/PDF) e perguntas
+        como "quanto gastamos com mercado?" ou "como devemos terminar o mês?".
+        Open source — @finance_house_bot.
+      en: >
+        Family finance assistant on Telegram. You write as you speak —
+        "spent 45 on lunch", "got 5500 salary" — and the bot organizes income,
+        expenses, cards, bills and the monthly summary. Works only in the family
+        group (not in private chat): natural language, recurring bills and installments,
+        card limits, category budgets, receipt OCR (photo/PDF) and questions like
+        "how much did we spend on groceries?" or "how should the month end?".
+        Open source — @finance_house_bot.
+    tags: [TypeScript, Telegram Bot, NLP, Finanças, Open Source]
+    links:
+      repo: "https://github.com/Weslley-hub/finance_bot"
+      demo: "https://t.me/finance_house_bot"
+      store: ""
+
+contracted:
+  - id: wiiascend
+    featured: false
+    icon: "fa-solid fa-building-columns"
+    image: ""
+    status: done
+    name:
+      pt: Wiiascend Internet Banking
+      en: Wiiascend Internet Banking
+    description:
+      pt: >
+        Conta digital com Pix, boletos, pagamentos e gestão de conta, integrada a
+        core bancário e plataformas BaaS. Construí o produto do zero à produção —
+        frontend web em React/TypeScript/Redux/Tailwind e app iOS em Flutter (BLoC),
+        com paridade de features; backend em Node.js, webhooks de pagamento,
+        idempotência, reprocessamento e reconciliação; infraestrutura AWS com Terraform.
+        Também atuei como Tech Lead do time.
+      en: >
+        Digital account with Pix, boletos, payments and account management, integrated
+        with a banking core and BaaS platforms. Built from zero to production — web
+        frontend in React/TypeScript/Redux/Tailwind and iOS app in Flutter (BLoC) with
+        feature parity; Node.js backend, payment webhooks, idempotency, reprocessing
+        and reconciliation; AWS infrastructure with Terraform. Also acted as Tech Lead.
+    tags: [React, TypeScript, Flutter, Node.js, AWS, Terraform, Pix, BaaS]
+    links:
+      repo: ""
+      demo: ""
+      store: ""
+
+  - id: fitbank-pix
+    featured: false
+    icon: "fa-solid fa-bolt"
+    image: ""
+    status: done
+    name:
+      pt: Fluxo Pix — FitBank Internet Banking
+      en: Pix flow — FitBank Internet Banking
+    description:
+      pt: >
+        Refatoração completa do fluxo Pix do Internet Banking da FitBank, melhorando
+        performance, rastreabilidade e confiabilidade de transações em tempo real para
+        operações no Brasil e na América Latina. APIs em C#/.NET 6, interfaces em React
+        e integração BaaS (pagamentos, transferências, extratos e reconciliação).
+      en: >
+        Full refactor of FitBank's Internet Banking Pix flow, improving performance,
+        traceability and reliability of real-time transactions for operations in Brazil
+        and Latin America. APIs in C#/.NET 6, React interfaces and BaaS integration
+        (payments, transfers, statements and reconciliation).
+    tags: [C#, .NET 6, React, Pix, BaaS, PostgreSQL]
+    links:
+      repo: ""
+      demo: ""
+      store: ""
+
+  - id: playhub
+    featured: false
+    icon: "fa-solid fa-tv"
+    image: ""
+    status: wip
+    name:
+      pt: PlayHub — streaming e entretenimento
+      en: PlayHub — streaming and entertainment
+    description:
+      pt: >
+        Engenharia full stack em produtos de streaming, integrando catálogos e serviços
+        de Globoplay, Apple TV+, Deezer, Disney+ e Universal+. APIs e regras de negócio
+        em C#/.NET/ASP.NET, interfaces em React/TypeScript, ciclo completo até
+        monitoramento em produção.
+      en: >
+        Full stack engineering on streaming products, integrating catalogs and services
+        from Globoplay, Apple TV+, Deezer, Disney+ and Universal+. APIs and business
+        rules in C#/.NET/ASP.NET, React/TypeScript interfaces, full cycle through
+        production monitoring.
+    tags: [C#, .NET, ASP.NET, React, TypeScript, REST APIs, SQL]
+    links:
+      repo: ""
+      demo: ""
+      store: ""
+
+  - id: newm-rodobens
+    featured: false
+    icon: "fa-solid fa-file-invoice-dollar"
+    image: ""
+    status: done
+    name:
+      pt: ERP de consórcios Rodobens — NewM
+      en: Rodobens consortium ERP — NewM
+    description:
+      pt: >
+        Desenvolvimento full stack do ERP de consórcios Rodobens: features críticas
+        da análise à produção, REST APIs em C#/.NET e Node.js, interfaces em React,
+        otimização de SQL Server, ambientes Docker e evolução de legado PHP/Laravel.
+      en: >
+        Full stack development of the Rodobens consortium ERP: critical features from
+        analysis to production, REST APIs in C#/.NET and Node.js, React interfaces,
+        SQL Server optimization, Docker environments and PHP/Laravel legacy evolution.
+    tags: [C#, .NET, Node.js, React, SQL Server, Docker]
+    links:
+      repo: ""
+      demo: ""
+      store: ""

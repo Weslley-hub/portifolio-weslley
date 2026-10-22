@@ -1,0 +1,12 @@
+<div class="hero-value">
+  {{ if or (eq .Site.Language.Lang "pt-br") (hasPrefix .Site.Language.Lang "pt") }}
+    Construo sistemas onde dinheiro real se move — com idempotência, rastreabilidade e observabilidade.
+  {{ else }}
+    I build systems where real money moves — with idempotency, traceability and observability.
+  {{ end }}
+</div>
+<div class="home-cta">
+  <a class="btn btn-primary" href="{{ "resume/" | relLangURL }}">{{ .Site.Params.ctaResume }}</a>
+  <span aria-hidden="true">·</span>
+  <a class="btn btn-secondary" href="{{ "contact/" | relLangURL }}">{{ .Site.Params.ctaContact }}</a>
+</div>

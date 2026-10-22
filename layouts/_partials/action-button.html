@@ -1,0 +1,20 @@
+{{ $url := .url }}
+{{ $kind := default "demo" .kind }}
+{{ if $url }}
+  {{ $label := i18n "demo" }}
+  {{ $icon := "fa-solid fa-arrow-up-right-from-square" }}
+  {{ if eq $kind "repo" }}
+    {{ $label = i18n "repo" }}
+    {{ $icon = "fa-brands fa-github" }}
+  {{ else if eq $kind "store" }}
+    {{ $label = i18n "store" }}
+    {{ $icon = "fa-brands fa-app-store-ios" }}
+  {{ else if eq $kind "demo" }}
+    {{ $label = i18n "demo" }}
+    {{ $icon = "fa-solid fa-play" }}
+  {{ end }}
+  <a class="action-button" href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+    <i class="{{ $icon }}" aria-hidden="true"></i>
+    <span>{{ $label }}</span>
+  </a>
+{{ end }}

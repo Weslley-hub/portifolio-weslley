@@ -1,0 +1,9 @@
+public/
+resources/_gen/
+.hugo_build.lock
+.DS_Store
+.tools/
+*.exe
+Thumbs.db
+node_modules/
+package-lock.json

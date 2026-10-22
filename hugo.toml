@@ -1,0 +1,141 @@
+baseURL = "http://localhost:1313/"
+title = "weslley.dev"
+theme = "hugo-coder"
+defaultContentLanguage = "pt-br"
+enableEmoji = true
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 6
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+author = "Weslley Teixeira"
+description = "Full Stack Software Engineer especializado em .NET, C#, React e sistemas financeiros."
+keywords = "software engineer, fullstack, .NET, C#, React, fintech, Pix, BaaS, Fortaleza"
+info = [
+  "Full Stack Software Engineer",
+  "na **PlayHub**"
+]
+avatarURL = "images/avatar.png"
+dateFormat = "2 January 2006"
+since = 2026
+colorScheme = "auto"
+hideColorSchemeToggle = false
+customSCSS = ["scss/custom.scss"]
+customJS = ["js/portfolio.js"]
+faviconSVG = "/images/favicon.svg"
+favicon_32 = "/images/favicon-32x32.png"
+favicon_16 = "/images/favicon-16x16.png"
+touchicon = "/images/apple-touch-icon.png"
+manifest = "/site.webmanifest"
+companyName = "PlayHub"
+companyURL = ""
+jobTitle = "Software Engineer"
+email = "weslleyfernando71609@gmail.com"
+githubUsername = "Weslley-hub"
+linkedinURL = "https://www.linkedin.com/in/weslley-fernando"
+phone = "+55 88 99678-5285"
+location = "Fortaleza, Ceará, Brasil"
+
+[[params.social]]
+name = "GitHub"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/Weslley-hub"
+ariaLabel = "GitHub de Weslley Teixeira"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 2
+url = "https://www.linkedin.com/in/weslley-fernando"
+ariaLabel = "LinkedIn de Weslley Teixeira"
+
+[[params.social]]
+name = "Email"
+icon = "fa-solid fa-envelope fa-2x"
+weight = 3
+url = "mailto:weslleyfernando71609@gmail.com"
+ariaLabel = "Enviar e-mail para Weslley Teixeira"
+
+[languages]
+  [languages.pt-br]
+    languageCode = "pt-BR"
+    languageName = "PT"
+    weight = 1
+    title = "weslley.dev"
+
+    [languages.pt-br.params]
+      author = "Weslley Teixeira"
+      description = "Full Stack Software Engineer especializado em .NET, C#, React e sistemas financeiros."
+      keywords = "engenheiro de software, fullstack, .NET, C#, React, fintech, Pix, BaaS, Fortaleza"
+      info = [
+        "Full Stack Software Engineer",
+        "na **PlayHub**"
+      ]
+      ctaResume = "Ver currículo"
+      ctaContact = "Fale comigo"
+
+    [[languages.pt-br.menu.main]]
+      name = "Sobre"
+      weight = 1
+      url = "about/"
+
+    [[languages.pt-br.menu.main]]
+      name = "Currículo"
+      weight = 2
+      url = "resume/"
+
+    [[languages.pt-br.menu.main]]
+      name = "Projetos"
+      weight = 3
+      url = "projects/"
+
+    [[languages.pt-br.menu.main]]
+      name = "Contato"
+      weight = 4
+      url = "contact/"
+
+  [languages.en]
+    languageCode = "en"
+    languageName = "EN"
+    weight = 2
+    title = "weslley.dev"
+
+    [languages.en.params]
+      author = "Weslley Teixeira"
+      description = "Full Stack Software Engineer specialized in .NET, C#, React and financial systems."
+      keywords = "software engineer, fullstack, .NET, C#, React, fintech, Pix, BaaS, Fortaleza"
+      info = [
+        "Full Stack Software Engineer",
+        "at **PlayHub**"
+      ]
+      ctaResume = "View resume"
+      ctaContact = "Get in touch"
+
+    [[languages.en.menu.main]]
+      name = "About"
+      weight = 1
+      url = "about/"
+
+    [[languages.en.menu.main]]
+      name = "Resume"
+      weight = 2
+      url = "resume/"
+
+    [[languages.en.menu.main]]
+      name = "Projects"
+      weight = 3
+      url = "projects/"
+
+    [[languages.en.menu.main]]
+      name = "Contact"
+      weight = 4
+      url = "contact/"

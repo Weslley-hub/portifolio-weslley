@@ -1,0 +1,55 @@
+<link rel="preload" href="{{ "fonts/inter-400.woff2" | relURL }}" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="{{ "fonts/inter-600.woff2" | relURL }}" as="font" type="font/woff2" crossorigin />
+
+{{ $base := strings.TrimSuffix "/" .Site.BaseURL }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Weslley Teixeira",
+  "url": "{{ $base }}/",
+  "image": "{{ $base }}/images/avatar.png",
+  "jobTitle": "{{ .Site.Params.jobTitle }}",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "{{ .Site.Params.companyName }}"
+  },
+  "email": "{{ .Site.Params.email }}",
+  "telephone": "{{ .Site.Params.phone }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fortaleza",
+    "addressRegion": "CE",
+    "addressCountry": "BR"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universidade Federal do Ceará"
+  },
+  "sameAs": [
+    "https://github.com/Weslley-hub",
+    "https://www.linkedin.com/in/weslley-fernando"
+  ],
+  "knowsAbout": [".NET", "C#", "React", "TypeScript", "Node.js", "Pix", "BaaS", "Fintech"]
+}
+</script>
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+{{ end }}
+<link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}" />
+<meta property="og:image" content="{{ "images/og-cover.svg" | absURL }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ "images/og-cover.svg" | absURL }}" />
+<style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
