@@ -3,20 +3,19 @@
 {{ $academic := .academic }}
 {{ $education := .education }}
 {{ $isPT := .isPT }}
-{{ $delay := 0 }}
 {{ $monthsPT := dict "1" "jan" "2" "fev" "3" "mar" "4" "abr" "5" "mai" "6" "jun" "7" "jul" "8" "ago" "9" "set" "10" "out" "11" "nov" "12" "dez" }}
 
 <section class="resume-section" aria-labelledby="resume-main">
   <h2 id="resume-main" class="resume-section__title">{{ i18n "resume_main" }}</h2>
   <p class="resume-section__lead">{{ i18n "resume_main_lead" }}</p>
-  {{ $delay = partial "timeline-section.html" (dict "items" $companies "isPT" $isPT "delay" $delay "monthsPT" $monthsPT) }}
+  {{ partial "timeline-section.html" (dict "items" $companies "isPT" $isPT "delay" 0 "monthsPT" $monthsPT) }}
 </section>
 
 {{ with $freelance }}
 <section class="resume-section" aria-labelledby="resume-freelance">
   <h2 id="resume-freelance" class="resume-section__title">{{ i18n "resume_freelance" }}</h2>
   <p class="resume-section__lead">{{ i18n "resume_freelance_lead" }}</p>
-  {{ $delay = partial "timeline-section.html" (dict "items" . "isPT" $isPT "delay" $delay "monthsPT" $monthsPT) }}
+  {{ partial "timeline-section.html" (dict "items" . "isPT" $isPT "delay" 80 "monthsPT" $monthsPT) }}
 </section>
 {{ end }}
 
@@ -24,7 +23,7 @@
 <section class="resume-section" aria-labelledby="resume-academic">
   <h2 id="resume-academic" class="resume-section__title">{{ i18n "resume_academic" }}</h2>
   <p class="resume-section__lead">{{ i18n "resume_academic_lead" }}</p>
-  {{ $delay = partial "timeline-section.html" (dict "items" . "isPT" $isPT "delay" $delay "monthsPT" $monthsPT) }}
+  {{ partial "timeline-section.html" (dict "items" . "isPT" $isPT "delay" 160 "monthsPT" $monthsPT) }}
 </section>
 {{ end }}
 
@@ -33,7 +32,7 @@
   <h2 id="resume-education" class="resume-section__title">{{ i18n "education" }}</h2>
   <ol class="timeline">
     {{ range . }}
-      <li class="timeline__item timeline__item--edu reveal" style="--reveal-delay: {{ $delay }}ms">
+      <li class="timeline__item timeline__item--edu reveal" style="--reveal-delay: 240ms">
         <div class="timeline__marker" aria-hidden="true"></div>
         <article class="timeline__card glass-card">
           <h3 class="timeline__company">{{ if $isPT }}{{ .name.pt }}{{ else }}{{ .name.en }}{{ end }}</h3>
@@ -44,7 +43,6 @@
           {{ end }}
         </article>
       </li>
-      {{ $delay = add $delay 80 }}
     {{ end }}
   </ol>
 </section>

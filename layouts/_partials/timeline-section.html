@@ -1,6 +1,6 @@
 {{ $items := .items }}
 {{ $isPT := .isPT }}
-{{ $delay := .delay }}
+{{ $delay := .delay | default 0 }}
 {{ $monthsPT := .monthsPT }}
 
 <ol class="timeline">
@@ -134,4 +134,3 @@
     {{ $delay = add $delay 80 }}
   {{ end }}
 </ol>
-{{ return $delay }}
