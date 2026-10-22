@@ -31,6 +31,52 @@ personal:
       store: ""
 
 contracted:
+  - id: lanlink-llm
+    featured: false
+    icon: "fa-solid fa-robot"
+    image: ""
+    status: done
+    name:
+      pt: Gestão de LLMs — Lanlink
+      en: LLM management — Lanlink
+    description:
+      pt: >
+        Sistema de gestão e controle de LLMs para empresas: uso, gastos, limites e
+        governança de modelos. Atuei como lead de projeto — planejei, arquitetei e
+        executei a solução full stack em Next.js e Node.js (ago–dez 2025).
+      en: >
+        LLM management and control system for companies: usage, spend, limits and
+        model governance. Acted as project lead — planned, architected and delivered
+        the full stack solution in Next.js and Node.js (Aug–Dec 2025).
+    tags: [Next.js, Node.js, TypeScript, REST APIs]
+    links:
+      repo: ""
+      demo: ""
+      store: ""
+
+  - id: bio-registro
+    featured: false
+    icon: "fa-solid fa-clipboard-list"
+    image: ""
+    status: done
+    name:
+      pt: Concursos e inscritos — Bio Registro
+      en: Contests and applicants — Bio Registro
+    description:
+      pt: >
+        Plataforma de controle de concursos e inscritos: editais, candidaturas,
+        validação e acompanhamento operacional. Backend em Java (Spring Boot,
+        Hibernate/JPA) e frontend em Next.js/TypeScript (fev–ago 2025).
+      en: >
+        Platform for managing contests and applicants: notices, registrations,
+        validation and operational follow-up. Java backend (Spring Boot,
+        Hibernate/JPA) and Next.js/TypeScript frontend (Feb–Aug 2025).
+    tags: [Java, Spring Boot, Spring, Hibernate, JPA, Next.js, TypeScript, PostgreSQL]
+    links:
+      repo: ""
+      demo: ""
+      store: ""
+
   - id: wiiascend
     featured: false
     icon: "fa-solid fa-building-columns"

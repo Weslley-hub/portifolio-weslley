@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-description: "Projects by Weslley Teixeira — Finlar and financial products in production."
+description: "Projects by Weslley Teixeira — Finlar (personal) and contracted deliveries."
 slug: projects
 layout: single
 ---

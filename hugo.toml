@@ -25,7 +25,6 @@ info = [
 ]
 avatarURL = "images/avatar.png"
 dateFormat = "2 January 2006"
-since = 2026
 colorScheme = "auto"
 hideColorSchemeToggle = false
 customSCSS = ["scss/custom.scss"]

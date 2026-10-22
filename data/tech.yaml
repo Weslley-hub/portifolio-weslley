@@ -32,6 +32,27 @@ items:
   "Next.js":
     icon: nextdotjs
     color: "#000000"
+  Java:
+    icon: openjdk
+    color: "#437291"
+  Spring:
+    icon: spring
+    color: "#6DB33F"
+  "Spring Boot":
+    icon: springboot
+    color: "#6DB33F"
+  Hibernate:
+    icon: hibernate
+    color: "#59666C"
+  JPA:
+    icon: hibernate
+    color: "#59666C"
+  Gradle:
+    icon: gradle
+    color: "#02303A"
+  Quarkus:
+    icon: quarkus
+    color: "#4695EB"
   Redux:
     icon: redux
     color: "#764ABC"

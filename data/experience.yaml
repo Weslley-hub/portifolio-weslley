@@ -28,6 +28,35 @@
             - "Investigate and resolve production incidents, from root cause to fix."
         stack: [C#, .NET, ASP.NET, React, TypeScript, REST APIs, SQL]
 
+  - id: lanlink
+    logo: ""
+    url: ""
+    name:
+      pt: Lanlink
+      en: Lanlink
+    roles:
+      - title:
+          pt: "Desenvolvedor Full Stack — Lead de Projeto"
+          en: "Full Stack Developer — Project Lead"
+        start: "2025-08-01"
+        end: "2025-12-31"
+        current: false
+        summary:
+          pt: "Planejei, arquitetei e executei um sistema de gestão e controle de LLMs em empresas — uso, custos, limites e governança de modelos."
+          en: "Planned, architected and delivered a system for managing and controlling LLMs in companies — usage, spend, limits and model governance."
+        responsibilities:
+          pt:
+            - "Liderar o projeto de ponta a ponta: planejamento, arquitetura, implementação e entrega."
+            - "Desenhar a solução de gestão de LLMs (consumo, gastos, políticas e monitoramento)."
+            - "Construir o frontend em Next.js e o backend em Node.js."
+            - "Definir integrações com provedores de modelos e regras de controle de custo."
+          en:
+            - "Led the project end to end: planning, architecture, implementation and delivery."
+            - "Designed the LLM management solution (usage, spend, policies and monitoring)."
+            - "Built the frontend in Next.js and the backend in Node.js."
+            - "Defined integrations with model providers and cost-control rules."
+        stack: [Next.js, Node.js, TypeScript, REST APIs]
+
   - id: wii-ascend
     logo: ""
     url: ""
@@ -89,6 +118,35 @@
             - "Translated Figma prototypes into UI, keeping consistency between web and mobile."
             - "Provisioned infrastructure on AWS with Terraform."
         stack: [React, TypeScript, Redux, Tailwind CSS, React Hook Form, Node.js, Flutter, Dart, iOS, AWS, Terraform, Stripe, Fitbank, BaaS, Pix, REST APIs]
+
+  - id: bio-registro
+    logo: ""
+    url: ""
+    name:
+      pt: Bio Registro
+      en: Bio Registro
+    roles:
+      - title:
+          pt: Desenvolvedor Java e Next.js
+          en: Java and Next.js Developer
+        start: "2025-02-01"
+        end: "2025-08-31"
+        current: false
+        summary:
+          pt: "Plataforma de controle de concursos e inscritos — gestão de editais, candidaturas, validação e acompanhamento operacional."
+          en: "Platform for managing contests and applicants — notices, registrations, validation and operational follow-up."
+        responsibilities:
+          pt:
+            - "Desenvolver backend em Java com Spring Boot, APIs REST e regras de negócio de concursos e inscrições."
+            - "Modelar persistência com JPA/Hibernate e banco relacional."
+            - "Construir interfaces em Next.js e TypeScript para operadores e candidatos."
+            - "Implementar fluxos de inscrição, validação de dados e acompanhamento de status."
+          en:
+            - "Developed the Java backend with Spring Boot, REST APIs and business rules for contests and registrations."
+            - "Modeled persistence with JPA/Hibernate and a relational database."
+            - "Built Next.js and TypeScript interfaces for operators and applicants."
+            - "Implemented registration flows, data validation and status tracking."
+        stack: [Java, Spring Boot, Spring, Hibernate, JPA, Next.js, TypeScript, REST APIs, PostgreSQL]
 
   - id: fitbank
     logo: ""
