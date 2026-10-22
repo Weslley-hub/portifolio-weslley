@@ -12,7 +12,7 @@ Sou **Weslley Teixeira**, engenheiro de software full stack em Fortaleza, Ceará
 
 Nos últimos anos trabalhei quase exclusivamente em sistemas onde dinheiro real se move: Internet Banking, Pix, boletos, cash-in e cash-out, integração com core bancário e plataformas BaaS (Banking as a Service), no Brasil e na América Latina. Já atuei em projetos com equipes da América Latina — México, Peru, Argentina e Colômbia.
 
-Atuo hoje como Software Engineer na **PlayHub**, em produtos de streaming e entretenimento. Antes disso, ajudei a levar o **Wiiascend Internet Banking** do zero à produção (web e iOS), inclusive como Tech Lead, participei da refatoração do fluxo Pix no Internet Banking da **FitBank**, liderei um projeto de gestão de LLMs na **Lanlink** e desenvolvi a plataforma de concursos da **Bio Registro**.
+Atuo hoje como Software Engineer na **PlayHub**, em produtos de streaming e entretenimento. Antes disso, ajudei a levar o **Wiiascend Internet Banking** do zero à produção (web e iOS), inclusive como Tech Lead, trabalhei no Internet Banking da **FitBank** e nos fluxos de pagamento (Pix, boleto e TED), liderei um projeto de gestão de LLMs na **Lanlink** e ajudei no desenvolvimento de um sistema de gestão de concursos, vagas e inscritos para provas na **Bio Registro**.
 
 Formado em Ciência da Computação pela **Universidade Federal do Ceará (UFC)**, com bolsa de iniciação científica CNPq. Aberto a conversas sobre engenharia em bancos, fintechs e empresas de pagamento.
 

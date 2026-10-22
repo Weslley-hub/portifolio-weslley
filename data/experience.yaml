@@ -133,19 +133,19 @@
         end: "2025-08-31"
         current: false
         summary:
-          pt: "Plataforma de controle de concursos e inscritos — gestão de editais, candidaturas, validação e acompanhamento operacional."
-          en: "Platform for managing contests and applicants — notices, registrations, validation and operational follow-up."
+          pt: "Ajudei no desenvolvimento de um sistema para gestão de concursos, vagas e inscritos para provas — editais, candidaturas e acompanhamento operacional."
+          en: "Contributed to a system for managing contests, openings and exam applicants — notices, registrations and operational follow-up."
         responsibilities:
           pt:
-            - "Desenvolver backend em Java com Spring Boot, APIs REST e regras de negócio de concursos e inscrições."
-            - "Modelar persistência com JPA/Hibernate e banco relacional."
-            - "Construir interfaces em Next.js e TypeScript para operadores e candidatos."
-            - "Implementar fluxos de inscrição, validação de dados e acompanhamento de status."
+            - "Contribuir no backend em Java com Spring Boot, APIs REST e regras de negócio de concursos e inscrições."
+            - "Apoiar a modelagem de persistência com JPA/Hibernate e banco relacional."
+            - "Participar da construção de interfaces em Next.js e TypeScript para operadores e candidatos."
+            - "Ajudar na implementação de fluxos de inscrição, validação de dados e acompanhamento de status."
           en:
-            - "Developed the Java backend with Spring Boot, REST APIs and business rules for contests and registrations."
-            - "Modeled persistence with JPA/Hibernate and a relational database."
-            - "Built Next.js and TypeScript interfaces for operators and applicants."
-            - "Implemented registration flows, data validation and status tracking."
+            - "Contributed to the Java backend with Spring Boot, REST APIs and business rules for contests and registrations."
+            - "Helped model persistence with JPA/Hibernate and a relational database."
+            - "Took part in building Next.js and TypeScript interfaces for operators and applicants."
+            - "Helped implement registration flows, data validation and status tracking."
         stack: [Java, Spring Boot, Spring, Hibernate, JPA, Next.js, TypeScript, REST APIs, PostgreSQL]
 
   - id: fitbank
@@ -166,22 +166,20 @@
           en: "Full stack development on FitBank financial products — Internet Banking, banking integrations and ERP — serving operations in Brazil and Latin America."
         responsibilities:
           pt:
-            - "Refatorar, com o time, o fluxo completo de Pix do Internet Banking, melhorando performance, rastreabilidade e confiabilidade de transações em tempo real."
+            - "Trabalhar no Internet Banking da FitBank, com foco nos fluxos de pagamento: Pix, boleto e TED."
             - "Desenvolver e manter APIs em C# e .NET 6 para operações financeiras."
             - "Construir interfaces em React, TypeScript, Redux, Tailwind CSS, Styled Components e React Hook Form."
             - "Integrar APIs bancárias em ecossistema BaaS: pagamentos, transferências, extratos e reconciliação."
-            - "Trabalhar com meios de pagamento regulamentados no Brasil, incluindo Pix e transferências."
             - "Contribuir no ERP Xpertia, integrando processos financeiros e automação operacional."
             - "Atuar em Scrum com times multidisciplinares, participando de definições técnicas e entrega contínua."
           en:
-            - "Refactored, with the team, the entire Pix flow of the Internet Banking, improving performance, traceability and reliability of real-time transactions."
+            - "Worked on FitBank's Internet Banking, focused on payment flows: Pix, boleto and TED."
             - "Developed and maintained APIs in C# and .NET 6 for financial operations."
             - "Built interfaces in React, TypeScript, Redux, Tailwind CSS, Styled Components and React Hook Form."
             - "Integrated banking APIs within a BaaS ecosystem: payments, transfers, statements and reconciliation."
-            - "Worked with regulated Brazilian payment methods, including Pix and bank transfers."
             - "Contributed to the Xpertia ERP, integrating financial processes and operational automation."
             - "Worked in Scrum with cross-functional teams, taking part in technical definitions and continuous delivery."
-        stack: [C#, .NET 6, React, TypeScript, Redux, Tailwind CSS, Styled Components, React Hook Form, REST APIs, BaaS, Pix, PostgreSQL, SQL Server]
+        stack: [C#, .NET 6, React, TypeScript, Redux, Tailwind CSS, Styled Components, React Hook Form, REST APIs, BaaS, Pix, Boleto, TED, PostgreSQL, SQL Server]
 
   - id: newm
     logo: ""

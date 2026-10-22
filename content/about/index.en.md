@@ -14,7 +14,7 @@ For the past few years I have worked almost entirely on systems where real money
 
 In this domain a mistake is not a bug — it is financial loss and regulatory risk. So I build around idempotency, reconciliation, transaction traceability, reprocessing and observability, not just “the screen works”.
 
-I currently work as a Software Engineer at **PlayHub**, on streaming and entertainment products. Before that, I helped take **Wiiascend Internet Banking** from zero to production (web and iOS), including as Tech Lead, took part in the full refactor of the Pix flow in **FitBank**'s Internet Banking, led an LLM management project at **Lanlink**, and built the contests platform at **Bio Registro**.
+I currently work as a Software Engineer at **PlayHub**, on streaming and entertainment products. Before that, I helped take **Wiiascend Internet Banking** from zero to production (web and iOS), including as Tech Lead, worked on **FitBank**'s Internet Banking and payment flows (Pix, boleto and TED), led an LLM management project at **Lanlink**, and contributed to a system for managing contests, openings and exam applicants at **Bio Registro**.
 
 I hold a B.Sc. in Computer Science from the **Federal University of Ceará (UFC)**, with a CNPq undergraduate research scholarship. Open to conversations about engineering in banks, fintechs and payment companies.
 

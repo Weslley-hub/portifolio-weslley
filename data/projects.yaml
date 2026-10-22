@@ -60,17 +60,19 @@ contracted:
     image: ""
     status: done
     name:
-      pt: Concursos e inscritos — Bio Registro
-      en: Contests and applicants — Bio Registro
+      pt: Gestão de concursos — Bio Registro
+      en: Contest management — Bio Registro
     description:
       pt: >
-        Plataforma de controle de concursos e inscritos: editais, candidaturas,
-        validação e acompanhamento operacional. Backend em Java (Spring Boot,
-        Hibernate/JPA) e frontend em Next.js/TypeScript (fev–ago 2025).
+        Participei do desenvolvimento de um sistema para gestão de concursos,
+        vagas e inscritos para provas — editais, candidaturas e acompanhamento
+        operacional. Atuei no backend em Java (Spring Boot, Hibernate/JPA) e no
+        frontend em Next.js/TypeScript (fev–ago 2025).
       en: >
-        Platform for managing contests and applicants: notices, registrations,
-        validation and operational follow-up. Java backend (Spring Boot,
-        Hibernate/JPA) and Next.js/TypeScript frontend (Feb–Aug 2025).
+        Contributed to a system for managing contests, openings and exam
+        applicants — notices, registrations and operational follow-up. Worked on
+        the Java backend (Spring Boot, Hibernate/JPA) and the Next.js/TypeScript
+        frontend (Feb–Aug 2025).
     tags: [Java, Spring Boot, Spring, Hibernate, JPA, Next.js, TypeScript, PostgreSQL]
     links:
       repo: ""
@@ -105,26 +107,25 @@ contracted:
       demo: ""
       store: ""
 
-  - id: fitbank-pix
+  - id: fitbank-ib
     featured: false
-    icon: "fa-solid fa-bolt"
+    icon: "fa-solid fa-building-columns"
     image: ""
     status: done
     name:
-      pt: Fluxo Pix — FitBank Internet Banking
-      en: Pix flow — FitBank Internet Banking
+      pt: Internet Banking — FitBank
+      en: Internet Banking — FitBank
     description:
       pt: >
-        Refatoração completa do fluxo Pix do Internet Banking da FitBank, melhorando
-        performance, rastreabilidade e confiabilidade de transações em tempo real para
-        operações no Brasil e na América Latina. APIs em C#/.NET 6, interfaces em React
-        e integração BaaS (pagamentos, transferências, extratos e reconciliação).
+        Trabalhei no Internet Banking da FitBank e nos fluxos de pagamento —
+        Pix, boleto e TED — além de transferências, extratos e integração BaaS.
+        APIs em C#/.NET 6 e interfaces em React, para operações no Brasil e na
+        América Latina.
       en: >
-        Full refactor of FitBank's Internet Banking Pix flow, improving performance,
-        traceability and reliability of real-time transactions for operations in Brazil
-        and Latin America. APIs in C#/.NET 6, React interfaces and BaaS integration
-        (payments, transfers, statements and reconciliation).
-    tags: [C#, .NET 6, React, Pix, BaaS, PostgreSQL]
+        Worked on FitBank's Internet Banking and payment flows — Pix, boleto and
+        TED — as well as transfers, statements and BaaS integration. APIs in
+        C#/.NET 6 and React interfaces, for operations in Brazil and Latin America.
+    tags: [C#, .NET 6, React, Pix, Boleto, TED, BaaS, PostgreSQL]
     links:
       repo: ""
       demo: ""
