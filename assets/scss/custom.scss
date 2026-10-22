@@ -1268,3 +1268,41 @@ body .btn.btn-secondary:hover {
   font-size: 1.15rem;
   font-weight: 600;
 }
+
+/* Home CTA: links limpos — sobrescreve body .btn do redesign (bordas/fundo) */
+body .about .home-cta .btn,
+body.colorscheme-dark .about .home-cta .btn,
+body.colorscheme-light .about .home-cta .btn,
+body .home-cta .btn,
+body.colorscheme-dark .home-cta .btn {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-accent) !important;
+  text-decoration: none;
+}
+
+body .home-cta .btn:hover,
+body.colorscheme-dark .home-cta .btn:hover {
+  background: transparent !important;
+  border: none !important;
+  color: var(--color-accent-hover) !important;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+body .home-cta .btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  border-radius: 4px !important;
+}
+
+.home-cta span[aria-hidden="true"] {
+  color: var(--color-text-faint, var(--color-text-muted));
+  user-select: none;
+}
